@@ -76,7 +76,7 @@ function fullReset() {
     game.wrong = 0;
     game.timeOut = 0;
     setCurrentQuestion();
-    game.timer = 15;
+    game.timer = 20;
 
 }
 function setCurrentQuestion() {
@@ -141,7 +141,7 @@ function gameplay(){
     game.counter++;
     isCorrect();
     answerhtml();
-    game.timer = 15;
+    game.timer = 20;
     setCurrentQuestion();
     setTimeout(function(){ questionhtml(); }, 6000);
     } else {
