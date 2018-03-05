@@ -37,7 +37,7 @@ var game = {
             a:"",b:"",c:"",d:"",
             answer:"",
         },
-        timer: 15,
+        timer: 20,
         intervalId: null,     
     }
 function isCorrect(){
