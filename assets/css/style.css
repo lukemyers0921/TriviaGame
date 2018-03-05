@@ -7,8 +7,9 @@
    animation: rainbow 3s infinite; 
  }
  
- h1 {
-     font-size:3.5em;
+ h1 span{
+     font-size:2em;
+     background:white;
  }
  
  body {
@@ -49,4 +50,14 @@
 }
 #Brown{
     color:brown;
+}
+button {
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
 }

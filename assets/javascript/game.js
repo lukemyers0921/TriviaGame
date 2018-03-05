@@ -43,13 +43,13 @@ var game = {
 function isCorrect(){
     console.log("isCorrect");
     if(game.userAnswer === game.currentQuestion.answer) {
-        game.result = "Right";
+        game.result = "Good Job You were Right!";
         game.right++;
     } else if(game.userAnswer === "Time Up"){
-        game.result = "Time's Up"
+        game.result = "Out of time!"
         game.timeOut++;
     } else {
-        game.result = "Wrong";
+        game.result = "oops that's Wrong!";
         game.wrong++;
     }
 }
@@ -89,7 +89,7 @@ function setCurrentQuestion() {
     console.log(game.currentQuestion);
 }
 function starthtml(){
-    var startHTML = `<button id = "start">start</button>`
+    var startHTML = `<button class = "rainbow" id = "start">start</button>`
     $("#holder").html(startHTML);
 }
 var questionHTML;
@@ -124,7 +124,7 @@ function endhtml() {
     <h2 id = right>Right Answers: ${game.right}</h2>
     <h2 id="wrong">Wrong Answers: ${game.wrong}</h2>
     <h2 id="unasnwered">Unanswered: ${game.timeOut}</h2>
-    <button id = "restart">restart</button>
+    <button class = "rainbow" id = "restart">restart</button>
      `
      $("#holder").html(endHTML);
 }
