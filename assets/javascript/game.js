@@ -46,6 +46,7 @@ function isCorrect(){
         game.result = "Right";
         game.right++;
     } else if(game.userAnswer === "Time Up"){
+        game.result = "Time's Up"
         game.timeOut++;
     } else {
         game.result = "Wrong";
@@ -142,7 +143,7 @@ function gameplay(){
     answerhtml();
     game.timer = 15;
     setCurrentQuestion();
-    setTimeout(function(){ questionhtml(); }, 3000);
+    setTimeout(function(){ questionhtml(); }, 6000);
     } else {
         isCorrect();
         answerhtml();
