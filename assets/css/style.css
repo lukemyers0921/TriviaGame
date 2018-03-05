@@ -1,0 +1,52 @@
+* {
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+.rainbow {
+
+   animation: rainbow 3s infinite; 
+ }
+ 
+ h1 {
+     font-size:3.5em;
+ }
+ 
+ body {
+     background-image: url("../images/background.png");
+     width:100%;
+     height: auto;
+ }
+ @keyframes rainbow{
+     20%{color: red;}
+     40%{color: yellow;}
+     60%{color: green;}
+     80%{color: blue;}
+     100%{color: orange;}	
+ }
+#Pink {
+    color:hotpink;
+}
+#Red {
+    color:red;
+}
+#Blue {
+    color:blue;
+}
+#Green{
+    color:green;
+}
+#Yellow {
+    color:yellow;
+}
+#Orange {
+    color:orange;
+}
+#Purple{
+    color:purple;
+}
+#Gray{
+    color:gray;
+}
+#Brown{
+    color:brown;
+}

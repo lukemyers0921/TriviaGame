@@ -98,10 +98,10 @@ function questionhtml(){
     `
     <h2 id = "question">${game.currentQuestion.question}</h2>
     <h2 id = "timer">Time Remaining: ${game.timer}</h2>
-    <h2 class="a">${game.currentQuestion.a}</h2>
-    <h2 class="a">${game.currentQuestion.b}</h2>
-    <h2 class="a">${game.currentQuestion.c}</h2>
-    <h2 class="a">${game.currentQuestion.d}</h2>
+    <h2 class="answer" id = ${game.currentQuestion.a}>${game.currentQuestion.a}</h2>
+    <h2 class="answer" id = ${game.currentQuestion.b}>${game.currentQuestion.b}</h2>
+    <h2 class="answer" id = ${game.currentQuestion.c}>${game.currentQuestion.c}</h2>
+    <h2 class="answer" id = ${game.currentQuestion.d}>${game.currentQuestion.d}</h2>
      `
      $("#holder").html(questionHTML);
      run();
@@ -113,7 +113,7 @@ function answerhtml(){
     <br>
     <h2 id = "timer">Time Remaining: ${game.timer}</h2>
     <h2 id="result">${game.result}</h2>
-    <h2 id="correctAnswer">The correct answer was ${game.currentQuestion.answer}</h2>
+    <h2 id="correctAnswer">The correct answer was<span id ="${game.currentQuestion.answer}"> ${game.currentQuestion.answer}</span></h2>
      `
      $("#holder").html(answerHTML);
 }
@@ -159,7 +159,7 @@ $(document).ready(function(){
         questionhtml();
     });
 
-    $("#holder").on("click", ".a", function(){
+    $("#holder").on("click", ".answer", function(){
         console.log("a click");
         game.userAnswer = $(this).text();
         gameplay();
